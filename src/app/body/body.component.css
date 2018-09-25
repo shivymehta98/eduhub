@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    margin: 0;
+    padding:0;
+}
+form{
+    display: inline-flex;
+    width:90%;
+    border-radius:0.2em;
+    position: relative;
+    top:30px;
+    left: 5%;
+}
+input[type=search]{
+    width: 70%;
+    padding: 10px;
+    border:none;
+    border-radius:   0.2em 0 0.2em 0;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=search]:focus {
+    width: 100%;
+    border: 2px solid #18D0C3;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+}
+i{
+    color:gray;
+    position:relative;
+    left:-26px;
+    top:14px;
+    z-index:999;
+}
+p {
+  
+   font-size: 30px;
+   margin: 50px auto;
+   margin-left: 5%;
+   
+}
+section{
+    padding:180px 0 0;
+}
+span a i{
+    left:2px;
+    top:-42px;
+}
+span a{
+    left:2px;
+    top:-42px;
+    
+}
+.card .post-image{
+    /* height:300px; */
+    /* overflow:hidden; */
+    max-height: 100%;
+    max-width: 100%;
+}
+.container{
+    
+    margin-left:8%;
+
+}
+[class*="col-xs-4"] {
+    margin-bottom: 25px;
+}
+
+.card{
+    position: relative;
+    height:400px;
+    /* overflow: hidden; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.card img{
+    transition: .5s;
+}
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0 ,0 ,0 ,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0 ,0 ,0 ,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0 ,0 ,0 ,0.75);
+}
+
+
+
+.cost-status{
+    display: inline-block!important;
+    float: right;
+    font-size: 1em!important;
+    margin-top: 1px;
+    color: green;
+    letter-spacing: 1px;
+}

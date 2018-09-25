@@ -61,7 +61,7 @@ ul .arrow-up{
     border-left:20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 20px solid #fff;
-    right: 142px;
+    right: 222px;
     top: 45px;
     display: none;
 }
@@ -70,7 +70,7 @@ ul .login-form{
     width: 326px;
     /* height: 231px; */
     height: auto;
-    
+    z-index: 100;
 
     background: #fff;
     right: 53px;
