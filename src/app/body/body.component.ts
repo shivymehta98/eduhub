@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
+import { EduhubService  } from '../eduhub.service';
+
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
@@ -7,7 +10,7 @@ import * as $ from 'jquery';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router:Router) { }
 
   ngOnInit() {
     $(document).ready(function(){

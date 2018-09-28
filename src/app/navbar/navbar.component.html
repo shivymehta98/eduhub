@@ -4,11 +4,15 @@
 </div>
 
   </div>
-  <!-- <div class="logo">LOGO</div> -->
+  <!-- <div class="logo">
+    <a routerLink="eduHUB"style="color: #fff;">eduHUB</a> -->
+  
   <ul>
-    <li><a href="#">Courses</a></li>
-    <li><a href="#">Blogs</a></li>
-    <li><a href="#">Become an Instructor</a></li>
+    
+    <li><a [routerLink]="['/courses']" routerLinkActive="active">Courses</a></li>
+      <li><a [routerLink]="['/blogs']" routerLinkActive="active">Blogs</a></li><li>
+        <a [routerLink]="['/instructor']" routerLinkActive="active">Become an Instructor</a>
+   </li> 
     <div class="spacer">
         <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> -->
       <i class="fa fa-unlock-alt"></i>

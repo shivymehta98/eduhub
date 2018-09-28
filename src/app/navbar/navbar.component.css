@@ -6,24 +6,36 @@ body{
     
 }
 
+
 nav{
    letter-spacing: 1.5px;
     font-family: sans-serif;
     width: 100%;
      background-image: linear-gradient(to left bottom, #0ab8d3, #00b5bd, #00b1a0, #00ab7e, #3fa359);
-}
-.spacer{
+     
+      
+    /* background: linear-gradient(45deg,#00ae7b,#0081bf);  */
+     }  
+       .spacer{
     float:right;
     list-style: none;
     display: inline-block;
     padding: 20px;
 }
 nav .logo{
-    padding: 18px 20px;
-    height: 80px;
+    padding: 12px 20px;
+    height: 100px;
     float: left;
-    font-size: 24px;
+    font-size: 28px;
     transition: .3s;
+    font-family: monospace;
+    text-decoration: none;
+    
+    font-weight: bold;
+    display: inline-block;
+}
+nav .logo :hover{
+    text-decoration: none;
 }
 ul{
     width: 80%;
