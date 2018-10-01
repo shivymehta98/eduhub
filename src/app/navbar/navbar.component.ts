@@ -10,12 +10,13 @@ export class NavbarComponent implements OnInit {
   constructor() { }
   
 
-  ngOnInit() {
+  ngOnInit() 
+  {
     $(document).ready(function(){
       $('.menu').click(function(){
         $(' ul').toggleClass('active');
       })
-    })
+    });
     $(document).ready(function(){
       var arrow = $(".arrow-up");
       var form = $(".login-form");
@@ -32,8 +33,26 @@ export class NavbarComponent implements OnInit {
         status=false;
       }
       })
+      var arrowupside = $(".arrow-upside");
+      var form1 = $(".signup-form");
+      var status=false;
+      $("#Signup").click(function(event){
+        event.preventDefault();
+      if(status == false){
+        arrowupside.fadeIn();
+        form1.fadeIn();
+        status=true;
+      }else{
+        arrowupside.fadeOut();
+        form1.fadeOut();
+        status=false;
+      }
+      })
      
     })
+   
+  
+    
   }
   
 }
